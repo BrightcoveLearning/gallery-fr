@@ -1,0 +1,762 @@
+﻿<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>Présentation : API Expérience en page</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><span class="product-logo" style="font-family:'Balto Web','Public Sans';font-size:2em;font-weight:bold;">GALERIE BRIGHTCOVE<sup>™</sup></span></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">Sélectionner la langue</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="assistance"/> Contacter le support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/">État<img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="état du système"/> du système</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/develop/">Développer</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Présentation : API Expérience en page</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+            <div class="col-sm-3 left-side-bar">
+        <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+          <option value="">Autres documents Brightcove</option>
+          
+            
+              <option value="https://support.brightcove.com">Accueil Documentation</option>
+            
+          
+            
+              <option value="https://audience.support.brightcove.com">Audience de Brightcove</option>
+            
+          
+            
+              <option value="https://beacon.support.brightcove.com">Balise Brightcove</option>
+            
+          
+            
+              <option value="https://campaign.support.brightcove.com">Campagne Brightcove</option>
+            
+          
+            
+              <option value="https://engage.support.brightcove.com">Brightcove Engagez</option>
+            
+          
+            
+              <option value="https://live.support.brightcove.com">Brightcove Live</option>
+            
+          
+            
+              <option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
+            
+          
+            
+              <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+            
+          
+            
+              <option value="https://social.support.brightcove.com">Brightcove Social</option>
+            
+          
+            
+              <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+            
+          
+            
+              <option value="https://player.support.brightcove.com">Développement du joueur Brightcove</option>
+            
+          
+            
+              <option value="https://apis.support.brightcove.com">API de la plate-forme Video Cloud</option>
+            
+          
+            
+              <option value="https://sdks.support.brightcove.com">SDK pour périphériques Video Cloud</option>
+            
+          
+            
+              <option value="https://integrations.support.brightcove.com">Intégrations et connecteurs CMS</option>
+            
+          
+            
+              <option value="https://general.support.brightcove.com">Informations générales sur Video Cloud</option>
+            
+          
+            
+              <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+            
+          
+        </select>
+
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">Accueil</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/index.html">Mise en route <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Création d'une expérience de portail</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-step-creating-and-publishing-page-experience.html">Création d'une expérience dans la page</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/creating-and-managing-gallery-experiences.html">Création et gestion d'expériences</a></li>
+                  
+                
+                  
+                    <li><a href="/training/gallery-training-videos.html">Galerie Vidéos de formation</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-gallery.html">Démarrer avec Brightcove Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-gallery-experiences.html">Vue d'ensemble des expériences dans la galerie</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-introduction-gallery.html">Formation : Introduction à la Galerie</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-building-portal-experiences-using-gallery.html">Formation : Création d'expériences de portail</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-building-page-experiences-using-gallery.html">Formation : Création d'expériences dans la page</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/experiences/index.html">Expériences <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/portal/index.html">Portail <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/portal/adding-video-cloud-videos-portal-experience.html">Ajout de vidéos Video Cloud</a></li>
+                        
+                        <li><a href="/experiences/portal/adding-videos-portal-experience.html">Ajout de vidéos</a></li>
+                        
+                        <li><a href="/experiences/portal/adding-youtube-videos-portal-experience.html">Ajout de vidéos YouTube</a></li>
+                        
+                        <li><a href="/experiences/portal/assigning-custom-domain-portal-experience.html">Affectation d'un domaine personnalisé</a></li>
+                        
+                        <li><a href="/experiences/portal/changing-player-layout-portal-experience.html">Modification de la disposition du lecteur</a></li>
+                        
+                        <li><a href="/experiences/portal/configuring-calls-action-portal-experience.html">Configuration des appels à l'action</a></li>
+                        
+                        <li><a href="/experiences/portal/configuring-search-engine-optimization-settings-portal-experience.html">Configuration des paramètres SEO</a></li>
+                        
+                        <li><a href="/experiences/portal/configuring-details-portal-experience.html">Configuration des détails d'une expérience</a></li>
+                        
+                        <li><a href="/experiences/portal/configuring-third-party-tracking-portal-experience.html">Configuration du suivi tiers</a></li>
+                        
+                        <li><a href="/experiences/portal/controlling-access-portal-experience.html">Contrôle de l'accès</a></li>
+                        
+                        <li><a href="/experiences/portal/overview-creating-editing-and-publishing-portal-experiences.html">Création, modification et publication d'expériences de portail</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-appearance-and-behavior-portal-experience.html">Personnalisation de l'apparence et du comportement</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-catalogue-template-settings.html">Personnalisation des paramètres du modèle de catalogue</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-chronicle-template-settings.html">Personnalisation des paramètres du modèle Chronicle</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-content-portal-experience-pages.html">Personnalisation du contenu des pages du portail</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-marquee-template-settings.html">Personnalisation des paramètres du modèle de sélection</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-player-and-lead-form-settings-portal-experience.html">Personnalisation des paramètres Player et Lead Form</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-site-configuration-portal-experience.html">Personnalisation de la configuration du site</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-site-features-portal-experience.html">Personnalisation des fonctionnalités du site</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-social-settings-portal-experience.html">Personnalisation des paramètres sociaux</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-style-portal-experience.html">Personnalisation du style</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-video-and-playback-settings-portal-experience.html">Personnalisation des paramètres vidéo et de lecture</a></li>
+                        
+                        <li><a href="/experiences/portal/customizing-video-settings-portal-experience.html">Personnalisation des paramètres vidéo</a></li>
+                        
+                        <li><a href="/experiences/portal/downloading-videos-portal-experience.html">Téléchargement de vidéos</a></li>
+                        
+                        <li><a href="/experiences/portal/exporting-gallery-lead-data.html">Exportation des données de prospec-galerie</a></li>
+                        
+                        <li><a href="/experiences/portal/indexing-gallery-portal-experience.html">Indexation d'une expérience de portail</a></li>
+                        
+                        <li><a href="/experiences/portal/overview-gallery-portal-templates.html">Généralités sur les modèles de portail Galerie</a></li>
+                        
+                        <li><a href="/experiences/portal/previewing-and-publishing-portal-experience.html">Prévisualisation et publication</a></li>
+                        
+                        <li><a href="/experiences/portal/updating-gallery-templates.html">Mise à jour des modèles Galerie</a></li>
+                        
+                        <li><a href="/experiences/portal/using-lead-form-portal-experience.html">Utilisation d'un formulaire de prospecte</a></li>
+                        
+                        <li><a href="/experiences/portal/using-custom-fonts-portal-experience.html">Utilisation de polices personnalisées</a></li>
+                        
+                        <li><a href="/experiences/portal/using-site-editor-customize-portal-experience.html">Utilisation de l'éditeur de site pour personnaliser une expérience</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/inpage/index.html">Dans la page <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/inpage/adding-components-page-experience.html">Ajout de composants</a></li>
+                        
+                        <li><a href="/experiences/inpage/adding-interactions-page-experience.html">Ajout d'interactions</a></li>
+                        
+                        <li><a href="/experiences/inpage/adding-videos-page-experience.html">Ajout de vidéos</a></li>
+                        
+                        <li><a href="/experiences/inpage/configuring-companion-components-page-experience.html">Configuration des composants compagnons</a></li>
+                        
+                        <li><a href="/experiences/inpage/configuring-details-page-experience.html">Configuration des détails d'une expérience</a></li>
+                        
+                        <li><a href="/experiences/inpage/configuring-settings-page-experience.html">Configuration des paramètres d'une expérience</a></li>
+                        
+                        <li><a href="/experiences/inpage/configuring-video-downloads-page-experience.html">Configuration des téléchargements vidéo</a></li>
+                        
+                        <li><a href="/experiences/inpage/creating-custom-themes-page-experiences.html">Création de thèmes personnalisés</a></li>
+                        
+                        <li><a href="/experiences/inpage/customizing-page-experience.html">Personnalisation d'une expérience dans la page</a></li>
+                        
+                        <li><a href="/experiences/inpage/customizing-style-page-experience.html">Personnalisation du style</a></li>
+                        
+                        <li><a href="/experiences/inpage/overview-gallery-page-experience-templates.html">Généralités sur les modèles d'expérience dans la page</a></li>
+                        
+                        <li><a href="/experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html">Vue d'ensemble : Création et publication d'expériences dans la page</a></li>
+                        
+                        <li><a href="/experiences/inpage/previewing-and-publishing-page-experience.html">Prévisualisation et publication</a></li>
+                        
+                        <li><a href="/experiences/inpage/reviewing-page-experience-analytics.html">Vérification des analyses</a></li>
+                        
+                        <li><a href="/experiences/inpage/reviewing-page-experience-calls-action-analytics.html">Examen de l'analyse des appels à l'action</a></li>
+                        
+                        <li><a href="/experiences/inpage/reviewing-page-experience-analytics-dashboard.html">Consulter le tableau de bord Analytics</a></li>
+                        
+                        <li><a href="/experiences/inpage/reviewing-page-experience-video-analytics.html">Vérification de l'analyse vidéo</a></li>
+                        
+                        <li><a href="/experiences/portal/updating-gallery-templates.html">Mise à jour des modèles Galerie</a></li>
+                        
+                        <li><a href="/experiences/inpage/using-dynamic-video-overrides-page-experience.html">Utilisation des substitutions vidéo dynamiques</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/live/index.html">Événement en direct <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/live/adding-pigeonhole-live-event-page-experience.html">Ajout d'un trou de pigeonhole à une page en direct</a></li>
+                        
+                        <li><a href="/experiences/live/adding-pigeonhole-live-event-portal-experience.html">Ajout de pigeonhole à un portail en direct</a></li>
+                        
+                        <li><a href="/experiences/portal/assigning-custom-domain-portal-experience.html">Affectation d'un domaine personnalisé</a></li>
+                        
+                        <li><a href="/experiences/portal/controlling-access-portal-experience.html">Contrôle de l'accès</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-page-experience.html">Création d'une expérience en direct dans la page</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-portal-experience.html">Création d'une expérience Live Event Portal</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-state-portal-event-experience.html">Création de l'état de l'événement en direct</a></li>
+                        
+                        <li><a href="/experiences/live/creating-post-event-state-portal-event-experience.html">Création de l'état post-événement</a></li>
+                        
+                        <li><a href="/experiences/live/creating-pre-event-state-portal-event-experience.html">Création de l'état avant l'événement</a></li>
+                        
+                        <li><a href="/experiences/live/customizing-live-event-portal-settings.html">Personnalisation des paramètres du portail d'événements en direct</a></li>
+                        
+                        <li><a href="/experiences/portal/previewing-and-publishing-portal-experience.html">Prévisualisation et publication</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/landing/index.html">Page de destination <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/portal/assigning-custom-domain-portal-experience.html">Affectation d'un domaine personnalisé</a></li>
+                        
+                        <li><a href="/experiences/landing/creating-landing-page-experience.html">Création d'une expérience de page de destination</a></li>
+                        
+                        <li><a href="/experiences/portal/exporting-gallery-lead-data.html">Exportation des données de prospec-galerie</a></li>
+                        
+                        <li><a href="/experiences/portal/previewing-and-publishing-portal-experience.html">Prévisualisation et publication</a></li>
+                        
+                        <li><a href="/experiences/portal/using-lead-form-portal-experience.html">Utilisation d'un formulaire de prospecte</a></li>
+                        
+                        <li><a href="/experiences/portal/using-site-editor-customize-portal-experience.html">Utilisation de l'éditeur de site pour personnaliser une expérience</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/index.html">Général <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/gallery-system-requirements.html">Configuration système requise</a></li>
+                  
+                
+                  
+                    <li><a href="/general/troubleshooting-brightcove-gallery-issues.html">Résolution des problèmes liés à la galerie Brightcove</a></li>
+                  
+                
+                  
+                    <li><a href="/general/brightcove-gallery-cookies.html">Biscuits de la Galerie Brightcove</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/settings/index.html">Paramètres de la galerie <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/settings/configuring-gallery-settings.html">Configuration des paramètres de la galerie</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/configuring-youtube-settings.html">Configuration des paramètres YouTube</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/configuring-access-control-profiles.html">Configuration des profils de contrôle d'accès</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/configuring-custom-domains-and-ssl.html">Configuration des domaines personnalisés et SSL</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/securing-portal-experience-auth0.html">Sécurisation d'une expérience de portail avec Auth0</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/securing-portal-experience-okta.html">Sécuriser une expérience de portail avec Okta</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/securing-portal-experience-ssl.html">Sécurisation d'une expérience de portail avec SSL</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/configuring-single-sign-active-directory-federation-services.html">Configuration de l'authentification unique avec ADFS</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/develop/index.html">Développeurs <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/develop/page-experience-code-snippets.html">Extraits de code d'expérience dans la page</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/page-experiences-custom-css-reference.html">Référence CSS personnalisée de l'expérience dans la page</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/embedding-brightcove-page-experiences-cms.html">Intégration d'expériences dans la page dans un CMS</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/overview-page-experience-api.html">Vue d'ensemble : API Expérience en page</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/overview-page-experience-client-api.html">Vue d'ensemble : API client d'expérience en page</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/page-experience-api-error-reference.html">Référence des erreurs de l'API d'expérience en page</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/page-experience-client-api-sample.html">Exemple d'API client d'expérience en page</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/quick-start-page-experience-platform-rest-api.html">Brève introduction : API REST (In-Page Experience Platform)</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/reference.html">Référence de l'API de plate-forme Experience en page</a></li>
+                  
+                
+                  
+                    <li><a href="https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html">Référence de l'API client d'expérience en page</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/training/index.html">Entraînement <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/training/gallery-training-videos.html">Galerie Vidéos de formation</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-introduction-gallery.html">Formation : Introduction à la Galerie</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-building-portal-experiences-using-gallery.html">Formation : Création d'expériences de portail</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-building-page-experiences-using-gallery.html">Formation : Création d'expériences dans la page</a></li>
+                  
+                
+                  
+                    <li><a href="/training/brightcove-university.html">Cours de formation à l'Université de Brightcove</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/index.html">Notes de mise à jour <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/gallery-release-notes.html">Notes de version de la Galerie</a></li>
+                  
+                
+                  
+                    <li><a href="/release-notes/gallery-template-release-notes.html">Notes de mise à jour du modèle Galerie</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html">Support <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Affichage de la page État du système Brightcove</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">Contacter les ventes</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Ouverture d'un dossier de support</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Menu de navigation"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Contenu de la page</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="ouvrir dans un nouvel onglet" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<article class="bcls-article">
+  <h1>Présentation : API Expérience en page</h1>
+  <summary>Cette rubrique fournit une vue d'ensemble de l'API Expériences en page.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>Il existe deux API associées aux expériences en page, mais elles sont utilisées à des fins très différentes :</p>
+    <dl>
+      <dt>API Expériences en page (REST)</dt>
+      <dd>
+        <p>L'API In-Page Experiences est une API REST qui vous permet de gérer les expériences en page par programme. Il est principalement destiné à l'intégration de la plateforme Video Cloud à votre application CMS.</p>
+        <p>Consultez également la <a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html#/">référence complète de l'API</a> pour plus de détails sur les demandes disponibles.</p>
+      </dd>
+      <dt>API client Expériences en page</dt>
+      <dd>
+        <p>L'API Client In-Page Experiences est une bibliothèque JavaScript qui vous aide à gérer le comportement de l'expérience en page au moment de l'exécution, de la même manière que l'API Brightcove Player est utilisée pour contrôler le comportement du lecteur. L'API est disponible sur n'importe quelle page exécutant une ou plusieurs expériences intégrées Brightcove. Voir la <a href="/develop/overview-page-experience-client-api.html">présentation : In-Page Experience Client API</a> pour plus d'informations.</p>
+      </dd>
+    </dl>
+    <p>Le reste de cette présentation traite de l'API REST pour gérer vos expériences en page sur le backend.</p>
+    <p>Pour obtenir une présentation générale des expériences dans la page, reportez-vous à <a href="/experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html">Généralités : Création, modification et publication d'expériences dans la page</a>.</p>
+    <p>Les sections qui suivent fournissent une vue d'ensemble des 4 groupes de requêtes API REST :</p>
+    <ul>
+      <li><a href="#experiences">Expériences</a></li>
+      <li><a href="#templates">Modèles</a></li>
+      <li><a href="#themes">Thèmes</a></li>
+      <li><a href="#fonts">Polices</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="experiences">Expériences</h2>
+    <p>Les demandes d'expériences se répartissent en trois sous-catégories :</p>
+    <dl>
+      <dt>Gérer les expériences</dt>
+      <dd>Ces demandes vous permettent d'obtenir une liste de toutes les expériences pour le compte. Vous pouvez également créer une nouvelle expérience et obtenir, mettre à jour ou supprimer une expérience spécifique. Enfin, vous pouvez dupliquer une expérience pour créer un point de départ pour une nouvelle expérience.</dd>
+      <dt>Publiser/Dépublier des expériences</dt>
+      <dd>Ces demandes à tous pour obtenir une liste de tous les modèles pour le compte ou un modèle particulier.</dd>
+      <dt>Gérer l'état des expériences en direct</dt>
+      <dd>Ces deux requêtes vous permettent soit d'obtenir l'état actuel d'une expérience en direct, soit de modifier ce statut (de <code translate="No">preEvent </code> à <code translate="No">live </code> , par exemple).</dd>
+    </dl>
+  </section>
+  <section class="bcls-section">
+    <h2 id="templates">Modèles</h2>
+    <p>Les modèles contrôlent l'aspect général d'une expérience. Les modèles personnalisés ne peuvent pas être créés, mais il existe plusieurs modèles standard, et d'autres peuvent être ajoutés au fil du temps. L'API vous permet d'obtenir une liste de modèles disponibles pour votre compte ou d'extraire un modèle spécifique.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="themes">Thèmes</h2>
+    <p>Les thèmes vous permettent de personnaliser un modèle pour créer l'apparence que vous voulez pour votre expérience. L'API fournit des méthodes pour gérer entièrement vos thèmes, en les créant, en les obtenant, en les mettant à jour ou en les supprimant.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="fonts">Polices</h2>
+    <p>Vous pouvez utiliser vos propres polices. Ces méthodes vous permettent d'ajouter des polices, de les mettre à jour, de les obtenir ou de les supprimer. Ce sont des polices Web, chargées via CSS.</p>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Contenu de la page</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Assistance Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">État du système</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contacter le support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Formation</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">Cours en ligne</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">S' inscrire à un cours</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Université de Brightcove</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">BrightCove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contactez-nous</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove, Inc. Tous droits réservés.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">Confidentialité</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Termes et conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+</div>
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
