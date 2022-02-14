@@ -1,0 +1,35 @@
+---
+title: Configuration de l'agenda de l'événement
+parent: Virtual Event 
+grandparent: Experiences
+layout: staging
+---
+
+<article class="bcls-article">
+  <h1>Configurer l'agenda des événements</h1>
+  <summary>Dans cette rubrique, vous apprendrez à personnaliser l'agenda des événements d'une expérience d'événement virtuel.</summary>
+  <section class="bcls-section">
+    <p>L'ordre du jour des événements est généralement utilisé pour afficher les événements en direct planifiés qui apparaissent dans la collection sélectionnée. Le bouton qui s'affiche à chaque session dépend de l'état de la session :</p>
+    <ul>
+      <li><strong>Avant l'événement</strong> - Aucun bouton n'est affiché, le compte à rebours s'affiche</li>
+      <li> <strong>Pendant</strong> - LIVE NOW lorsque l'événement est en cours</li>
+      <li><strong>Après l'événement</strong> - Le bouton affichera VIEW SESSION pour les événements passés.</li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/schedule-example.png" /></figure>
+    <p>En fonction du nombre de jours à l'ordre du jour, un <strong>Spectacle</strong> une liste déroulante apparaîtra permettant au spectateur de sélectionner le programme de la journée à afficher.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/schedule-example-show.png" /></figure>
+    <p>Les informations de l'agenda sont personnalisées en éditant le <code translate="No">schedule</code> objet dans le fichier de configuration.</p>
+    <ul>
+      <li><code translate="No">name</code>- Nom de la session</li>
+      <li><code translate="No">description</code>- Description de la session - actuellement non affichée sur la page mais peut être affichée à l'aide de JavaScript personnalisé</li>
+      <li><code translate="No">starts_at</code>- Date et heure de début de session</li>
+      <li><code translate="No">ends_at</code>- Date et heure de fin de session</li>
+      <li><code translate="No">live_id</code>- Non utilisé</li>
+      <li><code translate="No">vod_id</code>- Identifiant vidéo</li>
+      <li><code translate="No">speakers</code>- Informations sur les conférenciers</li>
+      <li><code translate="No">image_url</code>- Image de la session. La taille de l'image par défaut est de 320px x 180px. Les images seront rognées à cette taille.<br>
+      </li>
+    </ul>
+    <p>L' <code translate="No">schedule</code> objet du fichier de configuration a également des paramètres pour le <code translate="No">title</code> qui apparaît au-dessus de la planification et pour définir si la planification s'affiche dans un <code translate="No">expanded</code> mode.</p>
+  </section>
+</article>

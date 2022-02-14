@@ -1,0 +1,138 @@
+---
+title: Gestion de l'agenda de l'événement
+parent: Virtual Event 
+grandparent: Experiences
+description: In this topic you will learn how to upload and configure the event agenda for a Virtual Event Experience.
+layout: staging
+---
+
+<article class="bcls-article">
+  <h1>Gestion de l'agenda de l'événement</h1>
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p>Le module Agenda prend en charge le téléchargement d'un fichier d'agenda .csv externe, de sorte que tous les points de l'ordre du jour ne doivent pas être saisis manuellement dans le module Agenda. Le téléchargement d'un fichier d'agenda est la façon dont l'agenda de l'événement est initialement créé. Une fois qu'un agenda est téléchargé, il peut être modifié à l'aide du module Agenda.</p>
+    <aside class="bcls-aside bcls-aside--information">Note : Pour plus d'informations sur la création d'un fichier d'agenda à télécharger, reportez-vous à la section <a href="creating-agenda-virtual-event-experience.html">Création d'un fichier d'agenda d'événements</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="upload">Téléchargement d'un fichier d'agenda</h2>
+    <p>Avant d'importer votre agenda existant dans le module Agenda, le fichier agenda doit être exporté vers un fichier .csv. <strong>Le module Agenda peut uniquement importer un fichier .csv.</strong></p>
+    <p>À l'aide de l'éditeur de site Gallery, vous pouvez télécharger et configurer l'agenda de l'événement. Pour télécharger un fichier d'agenda dans une expérience d'événement virtuel, procédez comme suit.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Cliquez sur le nom de l'expérience pour ouvrir l'éditeur de site Gallery.</li>
+      <li><code translate="No"></code>Dans la navigation de gauche, cliquez sur<strong> CARACTÉRISTIQUES DU SITE&gt; Ordre du jour</strong>.</li>
+      <li>Cliquez sur <strong>Télécharger l'ordre du jour</strong>.</li>
+      <li>Parcourez et sélectionnez le fichier d'agenda à télécharger.</li>
+      <li>Confirmez que l'ordre du jour est répertorié sur le <strong>Mon agenda</strong> page.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-imported.png" /></figure>
+      </li>
+    </ol>
+    <p>Si des erreurs surviennent lors de l'import de l'agenda, un message s'affichera. Après l'importation, le <strong>Statut</strong> sera <strong>DÉSACTIVÉ</strong>. Les agendas dont le statut est DÉSACTIVÉ ne seront pas affichés dans l'expérience d'événement virtuel.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="title">Modification du titre de l'ordre du jour</h2>
+    <p>Le titre de l'agenda sera affiché sur la page d'accueil de l'expérience au-dessus de l'agenda. Par défaut, le titre de l'agenda sera défini sur le nom du fichier d'agenda qui a été importé. </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-title.png" /></figure>
+    <p>Pour modifier le titre de l'ordre du jour, cliquez sur l'icône de modification, saisissez un titre, puis appuyez sur <strong>Entrer</strong>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="view">Consulter l'ordre du jour</h2>
+    <p>Une fois qu'un fichier d'agenda a été téléchargé, il apparaîtra sur le <strong>Mon agenda</strong> page.<strong></strong> Pour consulter les détails de l'ordre du jour, cliquez sur le <strong>Nom de l'événement</strong>. L'agenda s'ouvrira en affichant les détails.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-details.png" /></figure>
+    <p>Cliquez sur une date sur le côté gauche de la page pour afficher l'ordre du jour de cette journée. Les pistes sont affichées dans les en-têtes de colonne en haut de la page.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="adding_sessions">Ajout d'une session</h2>
+    <p>Pour ajouter une nouvelle session, procédez comme suit.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Cliquez sur l'agenda pour ouvrir l'éditeur d'agenda.</li>
+      <li>Cliquez sur un créneau horaire libre.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-session-add.png" /></figure>
+      </li>
+      <li>Saisissez les informations de la session.
+        <ul>
+          <li>Nom de la session</li>
+          <li>Haut-parleurs - Cliquez sur <strong>Sélectionner</strong> des haut-parleurs et <a href="#select_speakers">sélectionnez un ou plusieurs haut-parleurs</a> pour la session.</li>
+          <li>Date de début</li>
+          <li>Heure de début</li>
+          <li>Durée</li>
+          <li>Description</li>
+          <li>Piste - Sélectionnez une piste à laquelle attribuer la session</li>
+          <li>Type de session
+            <ul>
+              <li>Session</li>
+              <li>Discours principal</li>
+              <li>Réunion</li>
+              <li>Autres</li>
+            </ul>
+          </li>
+          <li>ID vidéo : disponible avec Session, Keynote et autres types de session</li>
+          <li>URL : disponible avec le type de session de réunion</li>
+          <li>Image de couverture</li>
+          <li>Contenu associé - Peut être utilisé pour fournir un lien vers le contenu de session (documents ou diapositives)
+            <ul>
+              <li>Label - Étiquette pour le contenu</li>
+              <li>URL - Lien vers le contenu</li>
+            </ul>
+          </li>
+        </ul>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-session-add-details.png" /></figure>
+      </li>
+      <li>Cliquez sur <strong>Save</strong>.</li>
+    </ol>
+    <p>Confirmez que la session est ajoutée à l'ordre du jour. S'il y a plusieurs sessions dans la même piste programmées en même temps, elles seront mises en surbrillance et apparaîtront les unes à côté des autres.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-session-add-same-time.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="editing_sessions">Modification et suppression de sessions</h2>
+    <p>Pour modifier ou supprimer une session, cliquez sur une session pour ouvrir le panneau Modifier la session. Pour modifier la session, apportez des modifications et cliquez sur <strong>sauvegarder</strong>. Pour supprimer la session, cliquez sur <strong>Supprimer la session</strong>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="select_speaker">Ajouter des conférenciers à une session</h2>
+    <p>Pour ajouter des orateurs à une session, procédez comme suit.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Cliquez sur une session pour ouvrir l'éditeur de session.</li>
+      <li>Cliquez sur <strong>Sélectionnez les haut-parleurs</strong>.</li>
+      <li>Sélectionnez un ou plusieurs haut-parleurs ou cliquez sur <strong>Créer un haut-parleur</strong> pour créer un nouveau haut-parleur.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-select-speaker.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note : Pour plus d'informations sur la création de haut-parleurs, voir <a href="managing-event-speakers.html">Gestion des haut-parleurs d'événements</a>.</aside>
+      </li>
+      <li>Cliquez sur <strong>Save</strong>.</li>
+    </ol>
+    Les <strong>Chercher</strong> peut être utilisé pour rechercher des locuteurs.</section>
+  <section class="bcls-section">
+    <h2 id="add_track">Ajout d'une nouvelle piste</h2>
+    <p>Les pistes sont utilisées pour regrouper les sessions associées. Par exemple, la piste marketing comprendrait toutes les sessions liées au marketing. Un agenda aura généralement plusieurs pistes. Pour ajouter une nouvelle piste, procédez comme suit.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Cliquez sur l'agenda pour ouvrir l'éditeur d'agenda.</li>
+      <li>Clique le <strong>Ajouter une nouvelle piste</strong> lien en haut de l'agenda. Vous devrez peut-être faire défiler l'agenda vers la droite pour que le lien apparaisse.</li>
+      <li>Entrer le <strong>Nom de la piste</strong> et appuyez sur <strong>Entrer</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-add-track.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit_track">Édition d'une piste</h2>
+    <p>Pour modifier une piste, cliquez sur le nom de la piste, apportez des modifications et appuyez sur <strong>Entrer</strong> pour enregistrer les modifications.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-track-edit.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="reorder_track">Réorganiser les pistes</h2>
+    <p> Pour modifier l'ordre des pistes dans l'agenda, procédez comme suit.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Cliquez sur l'agenda pour ouvrir l'éditeur d'agenda.</li>
+      <li>Survolez le nom de la piste à déplacer, cliquez sur l'icône de saisie et faites glisser la piste vers le nouvel emplacement.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-reorder-track.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="activate">Activer et désactiver un agenda</h2>
+    <p>L'état de l'agenda détermine si l'agenda sera affiché ou non dans l'expérience d'événement virtuel associée. Le statut est affiché dans l'en-tête de la page sous le nom de l'agenda.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-status.png" /></figure>
+    <ul>
+      <li><strong>ACTIVÉ</strong> - L'agenda sera affiché dans l'expérience d'événements virtuels associée</li>
+      <li><strong>DÉSACTIVÉ</strong> - L'agenda ne sera pas affiché dans l'expérience d'événements virtuels associée.</li>
+    </ul>
+    <p>Pour activer un agenda, cliquez sur <strong>Activer</strong> en haut de la page. Pour désactiver un agenda, cliquez dessus et cliquez sur <strong>Désactiver</strong>. Notez qu'après avoir activé/désactivé un agenda, l'expérience n'a pas besoin d'être republiée.</p>
+  </section>
+</article>

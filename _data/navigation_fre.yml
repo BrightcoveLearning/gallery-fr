@@ -1,0 +1,269 @@
+- section: 
+  name: Accueil
+  url: /index.html
+- section: 
+  name: Mise en route
+  url: /get-started/index.html
+  docs:
+    - name: Création d'une expérience de portail
+      url: /get-started/step-step-creating-and-publishing-portal-experience.html
+    - name: Création d'une expérience dans la page
+      url: /get-started/step-step-creating-and-publishing-page-experience.html
+    - name: Création et gestion d'expériences
+      url: /get-started/creating-and-managing-gallery-experiences.html
+    - name: Galerie Vidéos de formation
+      url: /training/gallery-training-videos.html
+    - name: Démarrer avec Brightcove Gallery
+      url: /get-started/getting-started-brightcove-gallery.html
+    - name: Vue d'ensemble des expériences dans la galerie
+      url: /get-started/overview-gallery-experiences.html
+    - name: 'Formation : Introduction à la Galerie'
+      url: /training/training-demand-introduction-gallery.html
+    - name: 'Formation : Création d'expériences de portail'
+      url: /training/training-demand-building-portal-experiences-using-gallery.html
+    - name: 'Formation : Création d'expériences dans la page'
+      url: /training/training-demand-building-page-experiences-using-gallery.html
+- section: 
+  name: Expériences
+  url: /experiences/index.html
+  docs:
+    - name: Portail
+      url: /experiences/portal/index.html
+      docs:
+        - name: Ajout de vidéos Video Cloud
+          url: /experiences/portal/adding-video-cloud-videos-portal-experience.html
+        - name: Ajout de vidéos
+          url: /experiences/portal/adding-videos-portal-experience.html
+        - name: Ajout de vidéos YouTube
+          url: /experiences/portal/adding-youtube-videos-portal-experience.html
+        - name: Affectation d'un domaine personnalisé
+          url: /experiences/portal/assigning-custom-domain-portal-experience.html
+        - name: Modification de la disposition du lecteur
+          url: /experiences/portal/changing-player-layout-portal-experience.html
+        - name: Configuration des appels à l'action
+          url: /experiences/portal/configuring-calls-action-portal-experience.html
+        - name: Configuration des paramètres SEO
+          url: /experiences/portal/configuring-search-engine-optimization-settings-portal-experience.html
+        - name: Configuration des détails d'une expérience
+          url: /experiences/portal/configuring-details-portal-experience.html
+        - name: Configuration du suivi tiers
+          url: /experiences/portal/configuring-third-party-tracking-portal-experience.html
+        - name: Contrôle de l'accès
+          url: /experiences/portal/controlling-access-portal-experience.html
+        - name: Création, modification et publication d'expériences de portail
+          url: /experiences/portal/overview-creating-editing-and-publishing-portal-experiences.html   
+        - name: Personnalisation de l'apparence et du comportement
+          url: /experiences/portal/customizing-appearance-and-behavior-portal-experience.html
+        - name: Personnalisation des paramètres du modèle de catalogue
+          url: /experiences/portal/customizing-catalogue-template-settings.html
+        - name: Personnalisation des paramètres du modèle Chronicle
+          url: /experiences/portal/customizing-chronicle-template-settings.html
+        - name: Personnalisation du contenu des pages du portail
+          url: /experiences/portal/customizing-content-portal-experience-pages.html
+        - name: Personnalisation des paramètres du modèle de sélection
+          url: /experiences/portal/customizing-marquee-template-settings.html
+        - name: Personnalisation des paramètres Player et Lead Form
+          url: /experiences/portal/customizing-player-and-lead-form-settings-portal-experience.html
+        - name: Personnalisation de la configuration du site
+          url: /experiences/portal/customizing-site-configuration-portal-experience.html
+        - name: Personnalisation des fonctionnalités du site
+          url: /experiences/portal/customizing-site-features-portal-experience.html
+        - name: Personnalisation des paramètres sociaux
+          url: /experiences/portal/customizing-social-settings-portal-experience.html
+        - name: Personnalisation du style
+          url: /experiences/portal/customizing-style-portal-experience.html
+        - name: Personnalisation des paramètres vidéo et de lecture
+          url: /experiences/portal/customizing-video-and-playback-settings-portal-experience.html
+        - name: Personnalisation des paramètres vidéo
+          url: /experiences/portal/customizing-video-settings-portal-experience.html
+        - name: Téléchargement de vidéos
+          url: /experiences/portal/downloading-videos-portal-experience.html
+        - name: Exportation des données de prospec-galerie
+          url: /experiences/portal/exporting-gallery-lead-data.html
+        - name: Indexation d'une expérience de portail
+          url: /experiences/portal/indexing-gallery-portal-experience.html
+        - name: Généralités sur les modèles de portail Galerie
+          url: /experiences/portal/overview-gallery-portal-templates.html
+        - name: Prévisualisation et publication
+          url: /experiences/portal/previewing-and-publishing-portal-experience.html
+        - name: Mise à jour des modèles Galerie
+          url: /experiences/portal/updating-gallery-templates.html
+        - name: Utilisation d'un formulaire de prospecte
+          url: /experiences/portal/using-lead-form-portal-experience.html         
+        - name: Utilisation de polices personnalisées
+          url: /experiences/portal/using-custom-fonts-portal-experience.html
+        - name: Utilisation de l'éditeur de site pour personnaliser une expérience
+          url: /experiences/portal/using-site-editor-customize-portal-experience.html
+    - name: Dans la page
+      url: /experiences/inpage/index.html
+      docs:
+        - name: Ajout de composants
+          url: /experiences/inpage/adding-components-page-experience.html
+        - name: Ajout d'interactions
+          url: /experiences/inpage/adding-interactions-page-experience.html
+        - name: Ajout de vidéos
+          url: /experiences/inpage/adding-videos-page-experience.html
+        - name: Configuration des composants compagnons
+          url: /experiences/inpage/configuring-companion-components-page-experience.html
+        - name: Configuration des détails d'une expérience
+          url: /experiences/inpage/configuring-details-page-experience.html
+        - name: Configuration des paramètres d'une expérience
+          url: /experiences/inpage/configuring-settings-page-experience.html
+        - name: Configuration des téléchargements vidéo
+          url: /experiences/inpage/configuring-video-downloads-page-experience.html
+        - name: Création de thèmes personnalisés
+          url: /experiences/inpage/creating-custom-themes-page-experiences.html
+        - name: Personnalisation d'une expérience sur la page
+          url: /experiences/inpage/customizing-page-experience.html
+        - name: Personnalisation du style
+          url: /experiences/inpage/customizing-style-page-experience.html
+        - name: Généralités sur les modèles d'expérience dans la page
+          url: /experiences/inpage/overview-gallery-page-experience-templates.html
+        - name: 'Vue d'ensemble : Création et publication d'expériences dans la page'
+          url: /experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html
+        - name: Prévisualisation et publication
+          url: /experiences/inpage/previewing-and-publishing-page-experience.html
+        - name: Examen des analyses
+          url: /experiences/inpage/reviewing-page-experience-analytics.html
+        - name: Examen de l'analyse des appels à l'action
+          url: /experiences/inpage/reviewing-page-experience-calls-action-analytics.html
+        - name: Consulter le tableau de bord Analytics
+          url: /experiences/inpage/reviewing-page-experience-analytics-dashboard.html
+        - name: Vérification de l'analyse vidéo
+          url: /experiences/inpage/reviewing-page-experience-video-analytics.html
+        - name: Mise à jour des modèles Galerie
+          url: /experiences/portal/updating-gallery-templates.html
+        - name: Utilisation des substitutions vidéo dynamiques
+          url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
+    - name: Événement Live
+      url: /experiences/live/index.html
+      docs:
+      - name: 'Ajout d'un trou de pigeonhole à une page en direct'
+        url: /experiences/live/adding-pigeonhole-live-event-page-experience.html
+      - name: 'Ajout de pigeonhole à un portail en direct'
+        url: /experiences/live/adding-pigeonhole-live-event-portal-experience.html
+      - name: Affectation d'un domaine personnalisé
+        url: /experiences/portal/assigning-custom-domain-portal-experience.html
+      - name: Contrôle de l'accès
+        url: /experiences/portal/controlling-access-portal-experience.html
+      - name: Création d'une expérience en direct dans la page
+        url: /experiences/live/creating-live-event-page-experience.html
+      - name: Création d'une expérience Live Event Portal
+        url: /experiences/live/creating-live-event-portal-experience.html
+      - name: Création de l'état de l'événement en direct
+        url: /experiences/live/creating-live-event-state-portal-event-experience.html
+      - name: Création de l'état post-événement
+        url: /experiences/live/creating-post-event-state-portal-event-experience.html
+      - name: Création de l'état avant l'événement
+        url: /experiences/live/creating-pre-event-state-portal-event-experience.html
+      - name: Personnalisation des paramètres du portail d'événements en direct
+        url: /experiences/live/customizing-live-event-portal-settings.html
+      - name: Prévisualisation et publication
+        url: /experiences/portal/previewing-and-publishing-portal-experience.html
+
+    - name: Page de destination
+      url: /experiences/landing/index.html
+      docs:
+      - name: Affectation d'un domaine personnalisé
+        url: /experiences/portal/assigning-custom-domain-portal-experience.html
+      - name: Création d'une expérience de page de destination
+        url: /experiences/landing/creating-landing-page-experience.html
+      - name: Exportation des données de prospec-galerie
+        url: /experiences/portal/exporting-gallery-lead-data.html
+      - name: Prévisualisation et publication
+        url: /experiences/portal/previewing-and-publishing-portal-experience.html
+      - name: Utilisation d'un formulaire de prospecte
+        url: /experiences/portal/using-lead-form-portal-experience.html
+      - name: Utilisation de l'éditeur de site pour personnaliser une expérience
+        url: /experiences/portal/using-site-editor-customize-portal-experience.html
+- section: 
+  name: Généralités
+  url: /general/index.html
+  docs:
+    - name: Configuration système requise
+      url: /general/gallery-system-requirements.html
+    - name: Résolution des problèmes liés à la galerie Brightcove
+      url: /general/troubleshooting-brightcove-gallery-issues.html
+    - name: Biscuits de la Galerie Brightcove
+      url: /general/brightcove-gallery-cookies.html
+- section: 
+  name: Paramètres de la galerie
+  url: /settings/index.html
+  docs:
+    - name: Configuration des paramètres de la galerie
+      url: /settings/configuring-gallery-settings.html
+    - name: Configuration des paramètres YouTube
+      url: /settings/configuring-youtube-settings.html
+    - name: Configuration des profils de contrôle d'accès
+      url: /settings/configuring-access-control-profiles.html
+    - name: Configuration des domaines personnalisés et SSL
+      url: /settings/configuring-custom-domains-and-ssl.html
+    - name: Sécurisation d'une expérience de portail avec Auth0
+      url: /settings/securing-portal-experience-auth0.html
+    - name: Sécuriser une expérience de portail avec Okta
+      url: /settings/securing-portal-experience-okta.html
+    - name: Sécurisation d'une expérience de portail avec SSL
+      url: /settings/securing-portal-experience-ssl.html
+    - name: Configuration de l'authentification unique avec ADFS
+      url: /settings/configuring-single-sign-active-directory-federation-services.html
+- section: 
+  name: Développeurs
+  url: /develop/index.html
+  docs:
+    - name: Extraits de code d'expérience dans la page
+      url: /develop/page-experience-code-snippets.html
+    - name: Référence CSS personnalisée de l'expérience dans la page
+      url: /develop/page-experiences-custom-css-reference.html
+    - name: Intégration d'expériences dans la page dans un CMS
+      url: /develop/embedding-brightcove-page-experiences-cms.html
+    - name: 'Vue d'ensemble : API Expérience en page'
+      url: /develop/overview-page-experience-api.html
+    - name: 'Vue d'ensemble : API client d'expérience en page'
+      url: /develop/overview-page-experience-client-api.html
+    - name: Référence des erreurs de l'API d'expérience en page
+      url: /develop/page-experience-api-error-reference.html
+    - name: Exemple d'API client d'expérience en page
+      url: /develop/page-experience-client-api-sample.html
+    - name: 'Brève introduction : API REST (In-Page Experience Platform)'
+      url: /develop/quick-start-page-experience-platform-rest-api.html
+    - name: 'Référence de l'API de plate-forme Experience en page'
+      url: /develop/reference.html
+    - name: 'Référence de l'API client d'expérience en page'
+      url: 'https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html'
+- section: 
+  name: Formation
+  url: /training/index.html
+  docs:
+    - name: Galerie Vidéos de formation
+      url: /training/gallery-training-videos.html
+    - name: 'Formation : Introduction à la Galerie'
+      url: /training/training-demand-introduction-gallery.html
+    - name: 'Formation : Création d'expériences de portail'
+      url: /training/training-demand-building-portal-experiences-using-gallery.html
+    - name: 'Formation : Création d'expériences dans la page'
+      url: /training/training-demand-building-page-experiences-using-gallery.html
+    - name: Cours de formation à l'Université de Brightcove
+      url: /training/brightcove-university.html
+- section: 
+  name: Notes de version
+  url: /release-notes/index.html
+  docs:
+    - name: Notes de version de la Galerie
+      url: /release-notes/gallery-release-notes.html
+    - name: Notes de mise à jour du modèle Galerie
+      url: /release-notes/gallery-template-release-notes.html
+- section: 
+  name: Soutien
+  url: /support/index.html
+  docs:
+    - name: 'Affichage de la page État du système Brightcove'
+      url: '/support/viewing-brightcove-system-status-page.html'
+    - name: 'Ouverture d'un dossier de support'
+      url: '/support/opening-case-with-brightcove-support.html'
+    - name: 'Réinitialiser votre mot de passe de portail d'assistance'
+      url: '/support/reset-support-portal-password.html'
+    - name: 'Contacter les ventes'
+      url: '/support/contact-sales.html'
+# TODO correct and add additional sections/pages
+# TODO note that the order of items here determines the order in navigation
+# TODO indentation in YAML is crucial and must be with spaces (not tabs!)

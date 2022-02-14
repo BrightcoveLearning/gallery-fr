@@ -1,0 +1,24 @@
+---
+title: Personnalisation des haut-parleurs de l'événement
+parent: Virtual Event 
+grandparent: Experiences
+layout: staging
+---
+
+<article class="bcls-article">
+  <h1>Personnalisation des conférenciers</h1>
+  <summary>Dans cette rubrique, vous allez apprendre à personnaliser les conférenciers qui apparaissent sur la page d'accueil Virtual Event Experience.</summary>
+  <section class="bcls-section">
+    <p>Des images de conférencier et une courte biographie peuvent être ajoutées à la page d'accueil de l'événement virtuel. </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/speakers-example.png" /></figure>
+    <p>Les informations de haut-parleur sont personnalisées en modifiant l' <code translate="No">speakers</code> objet dans le fichier de configuration.</p>
+    <ul>
+      <li><code translate="No">name</code>- Nom de l'orateur</li>
+      <li><code translate="No">description</code>- Informations sur les haut-parleurs qui s'affichent sous leur image. Ceci est limité à environ 3 lignes de 15 mots.</li>
+      <li><code translate="No">image_url</code>- Image du haut-parleur. Recommandez une largeur maximale de 200px. Les images ne seront pas redimensionnées</li>
+      <li><code translate="No">link_url</code>- (facultatif) URL de destination de l'image (peut être liée à la page LinkedIn du haut-parleur par exemple)</li>
+    </ul>
+    <p>Par défaut, le modèle CSS configure les images de haut-parleur avec un <code translate="No">border-radius</code> de 50%, ce qui rendra les images circulaires.</p>
+    <p>L' <code translate="No">speakers</code> objet du fichier de configuration dispose également de paramètres permettant de contrôler l'emplacement dans la page d'accueil des informations sur le haut-parleur. Pour plus d'informations sur le positionnement de la section haut-parleurs, voir <a href="/experiences/virtual-event/positioning-content-homepage.html">Positionnement du contenu sur la page d'accueil</a>. </p>
+  </section>
+</article>

@@ -1,0 +1,83 @@
+---
+title: Ajout de vidéos à une expérience d'événement virtuel
+parent: Virtual Event 
+grandparent: Experiences
+description: In this topic you will learn how to add videos to a Virtual Event Experience.
+layout: staging
+---
+
+<article class="bcls-article">
+  <h1>Ajout de vidéos à une expérience d'événement virtuel</h1>
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p>À l'aide de l'éditeur de collection Gallery, vous pouvez sélectionner les vidéos à afficher sur une expérience d'événement virtuel. Comme d'autres expériences de type portatif, les vidéos sont organisées en collections.</p>
+    <p>Pour ajouter des vidéos à une expérience d'événement virtuel, cliquez sur <strong>VIDÉOS</strong> dans la navigation de gauche.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-videos-menu.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="layout">Organisation de la collection vidéo</h2>
+    <p>L'ordre des collections contrôlera leur apparence sur la page d'accueil de l'événement virtuel.</p>
+    <aside class="bcls-aside bcls-aside--information">Note : Pour plus d'informations sur la création de collections et l'ajout de vidéos à une collection, voir <a href="/experiences/portal/adding-videos-portal-experience.html">Ajout de vidéos à une expérience de portail</a>.</aside>
+    <p>Le modèle d'événement virtuel comporte quatre zones principales où les vidéos sont affichées comme indiqué dans le site exemple :</p>
+    <ol>
+      <li><strong>Collection en vedette</strong> - Généralement utilisée pour présenter le contenu live ou <a href="/experiences/virtual-event/using-simulated-live-videos.html">simulive</a> qui sera affiché tout au long de l'événement. Cela devrait idéalement être commandé en fonction de son temps de mise en service du plus tôt au dernier, pour une expérience optimale.</li>
+      <li><strong>Collection principale</strong> : peut inclure n'importe quoi, mais il est généralement utilisé pour présenter des cassures de VOD spécifiques ou du contenu sur lequel vous souhaitez attirer l'attention.</li>
+      <li><strong>Collection secondaire</strong> : peut inclure n'importe quoi, mais est généralement utilisé pour présenter des cassures de VOD ou du contenu spécifiques auxquels vous souhaitez attirer l'attention.</li>
+      <li><strong>Pistes</strong> : généralement utilisées pour le contenu VOD</li>
+    </ol>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-layout-example.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note : Les collections Featured, Primary et Secondary prennent en charge un maximum de 24 vidéos.</aside> <aside class="bcls-aside bcls-aside--information">Note : Pour insérer un titre au-dessus de la collection primaire/secondaire, ajoutez un objet de contenu statique au fichier de configuration. Pour plus d'informations, voir <a href="/experiences/virtual-event/working-static-content.html">Utilisation du contenu statique</a>.</aside>
+    <p>Lors de la commande de collections dans la Galerie, les collections doivent être commandées de la manière suivante :</p>
+    <ul>
+      <li>Collection 1 - Collection en vedette</li>
+      <li>Collection 2 - Collection principale</li>
+      <li>Collection 3 - Collection secondaire</li>
+      <li>Collection 4 - Tracks</li>
+    </ul>
+    <p>Pour l'exemple ci-dessus, les collections seraient créées comme suit :</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-order-example.png" /></figure>
+    <p>Certaines étapes supplémentaires sont nécessaires pour configurer les pistes. Les pistes sont décrites dans la section <a href="#tracks">Configuration des pistes d'événements</a> ci-dessous. <strong>Playlist</strong> ou alors <strong>Personnalisé</strong> les collections basées peuvent être utilisées mais si l'événement utilisera <a href="/experiences/virtual-event/using-role-based-access-control.html">contrôle d'accès basé sur les rôles</a> Pour empêcher les utilisateurs de certains rôles de voir du contenu, les listes de lecture ne doivent pas être utilisées car les listes de lecture ne prennent pas en charge le filtrage de contrôle d'accès basé sur les rôles.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-criteria-example.png" /></figure>
+    </p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="tracks">Configuration des pistes d'événements</h2>
+    <p>Lors de la création des pistes, suivez les instructions ci-dessous pour vous assurer qu'elles apparaissent correctement dans l'expérience :</p>
+    <ul>
+      <li>Les noms de collection apparaîtront dans le modèle d'événement virtuel, utilisez donc des noms significatifs
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-tracks-ui-sample.png" /></figure>
+      </li>
+      <li>La collection de pistes sera une collection imbriquée, aucune vidéo n'apparaîtra dans cette collection</li>
+      <li>La collection de pistes devrait être la quatrième collection</li>
+      <li>Créer des collections enfants sous la collection de pistes pour chaque piste
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-tracks-example.png" /></figure>
+      </li>
+      <li>N'utilisez pas de listes de lecture lors de la création des collections</li>
+      <li>La position de la section des pistes est spécifiée dans le fichier de configuration et <a href="/experiences/virtual-event/positioning-content-homepage.html">peut être changé</a> en éditant le <code translate="No">breakout_collection</code> objet dans le fichier de configuration</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="track-url">Configuration de l'URL des pistes</h2>
+    <p>Une fois les collections créées, le fichier de configuration doit être mis à jour afin que le lien Sessions à la demande dans l'en-tête dirige vers l'URL correcte. Le nom utilisé pour la collection de pistes (collection 4) sera utilisé dans l'URL pour accéder à la page des pistes. Pour vous assurer que l'URL est correctement définie, confirmez ce qui suit.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Vérifiez le fichier de configuration et localisez l' <code translate="No">breakout_collection</code> objet.</li>
+      <li> Le <code translate="No">collection</code> paramètre contient l'URL de la page des pistes. Par exemple :<br/>
+        <pre><code translate="No">
+"breakout_collection": {
+    "collection": "/category/videos/tracks",
+    "insert_target": ".bc-on-demand-section",
+    "insert_mode": "after"
+},
+          </code></pre>
+      </li>
+      <li>Le dernier chemin dans l' <code translate="No">collection</code> URL doit refléter le nom de votre collection de pistes (collection 4). Par exemple, si votre collection de morceaux (collection 4) s'appelle 'Sessions', le paramètre de collection sera mis à jour pour :<br/>
+        <pre><code translate="No">
+"collection": "/category/videos/sessions",      
+          </code></pre>
+      </li>
+      <li>Pour vérifier la configuration, cliquez sur le lien Sessions à la demande dans l'en-tête. La session des pistes devrait apparaître. Cliquer sur une piste devrait ouvrir les vidéos dans une piste. Si une erreur 404 s'affiche, il y a un problème de configuration.</li>
+    </ol>
+    <p>&nbsp;</p>
+  </section>
+</article>
